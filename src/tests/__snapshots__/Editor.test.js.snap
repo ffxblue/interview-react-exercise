@@ -23,6 +23,7 @@ exports[`Editor component convert kelvin to whole number celsius when check cels
             class="editor__text-input"
             placeholder="Title of widget"
             type="text"
+            value=""
           />
         </div>
         <div
@@ -191,6 +192,7 @@ exports[`Editor component convert kelvin to whole number fahrenheit when check f
             class="editor__text-input"
             placeholder="Title of widget"
             type="text"
+            value=""
           />
         </div>
         <div
@@ -358,6 +360,7 @@ exports[`Editor component should not show wind when wind off is checked 1`] = `
             class="editor__text-input"
             placeholder="Title of widget"
             type="text"
+            value=""
           />
         </div>
         <div
@@ -514,6 +517,7 @@ exports[`Editor component should show wind when wind off is checked 1`] = `
             class="editor__text-input"
             placeholder="Title of widget"
             type="text"
+            value=""
           />
         </div>
         <div
@@ -682,6 +686,7 @@ exports[`Editor component shows uppercase title in widget when typing in text in
             class="editor__text-input"
             placeholder="Title of widget"
             type="text"
+            value="title"
           />
         </div>
         <div

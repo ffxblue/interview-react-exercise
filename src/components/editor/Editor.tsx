@@ -7,8 +7,14 @@ const Editor: React.FC = () => {
   // Title is not set as default
   // Temperature default unit is Celsius
   // Wind is shown in default
+  const [widgetTitle, setWidgetTitle] = useState('' as string);
   const [isCelsius, setIsCelsius] = useState(true as boolean);
   const [showWind, setShowWind] = useState(true as boolean);
+
+  const handleWidgetTitleChange = (event: React.FormEvent<HTMLInputElement>) => {
+    event.preventDefault();
+    setWidgetTitle(event.currentTarget.value);
+  };
 
   return (
     <div className="editor">
@@ -20,6 +26,8 @@ const Editor: React.FC = () => {
               type="text"
               className="editor__text-input"
               placeholder="Title of widget"
+              value={widgetTitle}
+              onChange={handleWidgetTitleChange}
             />
           </div>
           <div className="editor__control-field">
@@ -80,6 +88,7 @@ const Editor: React.FC = () => {
 
         <div className="editor__display-panel">
           <Widget
+            widgetTitle={widgetTitle}
             isCelsius={isCelsius}
             showWind={showWind}
           />

@@ -21,6 +21,7 @@ interface IWeather {
 }
 
 interface IWeatherProps {
+    widgetTitle: string,
     isCelsius: boolean,
     showWind: boolean
 }
@@ -31,7 +32,7 @@ const geoOptions = {
   maximumAge: 0,
 };
 
-const Widget = ({ isCelsius, showWind }: IWeatherProps): React.ReactElement => {
+const Widget = ({ widgetTitle, isCelsius, showWind }: IWeatherProps): React.ReactElement => {
   const [weatherData, setWeatherData] = useState({} as IWeather);
   const [error, setError] = useState(false as boolean);
   const [loading, setLoading] = useState(true as boolean);
@@ -131,7 +132,7 @@ const Widget = ({ isCelsius, showWind }: IWeatherProps): React.ReactElement => {
 
   return (
     <div className="widget">
-      <div className="widget__title" data-testid="widget-title">TITLE</div>
+      <div className="widget__title" data-testid="widget-title">{widgetTitle.length ? widgetTitle.toUpperCase() : 'TITLE'}</div>
       <div className="widget__content">
         {renderContent()}
       </div>
