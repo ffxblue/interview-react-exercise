@@ -23,7 +23,7 @@ yarn start
 You can complete the following tasks in any order, and don't feel like you need to complete them all in the time allowed.
 
 * As a user, I like to be able to save my preferences (title, temperature and wind). How could this be achieved?
-* As a user, I'd like to be able to refresh weather on click of a button. However, the weather API has rate limiting, after which an error is returned. What can we do to prevent this limit being exceeded?
+* As a user, I'd like to be able to refresh the weather with the click of a button. However, the weather API has rate limiting, after which an error is returned. What can we do to prevent this limit being exceeded?
 * As a developer, I'm interested in adding observability to make developers' lives easier and product managers happy. What application and audience observability would be valuable?
 
 ### Bonus task
