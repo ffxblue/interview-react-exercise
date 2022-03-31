@@ -41,7 +41,7 @@ const Widget = ({ widgetTitle, isCelsius, showWind }: IWeatherProps): React.Reac
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((pos) => {
       const { latitude, longitude } = pos.coords;
-      axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${'ee7405469955e124ef77214a739627c5'}`)
+      axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${'2657d19655bd80b66ade2b20f3effe0e'}`)
         .then((res) => {
           setWeatherData(res.data);
           setLoading(false);
